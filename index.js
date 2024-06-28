@@ -1,6 +1,7 @@
 // set up Express, connect to MongoDB, and define middleware.
 
 const express = require('express');
+const mongoose = require('mongoose');
 const db = require('./config/database'); // Import MongoDB connection configuration
 
 const app = express();

@@ -1,24 +1,16 @@
-// MongoDB connection URI and any additional database settings.
+// database.js
 
 const mongoose = require('mongoose');
+require('dotenv').config(); // Load environment variables from .env file
 
-// MongoDB connection URI 
-// Copy from MongoCompass exactly despite password being formatted different
-const mongoURI = 'mongodb+srv://jkirbyzabala:13%40Car3fr33@mongopractice.evnby4o.mongodb.net/';
+const mongoURI = process.env.MONGO_URI;
 
 // Connect to MongoDB
-mongoose.connect(mongoURI);
+mongoose.connect(mongoURI, {
+  useNewUrlParser: true, // Optional in Mongoose v6 and above
+  useUnifiedTopology: true, // Required for MongoDB's new Server Discovery and Monitoring engine
+})
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('MongoDB connection error:', err.message));
 
-// Get the default connection
-const db = mongoose.connection;
-
-// Bind connection to error event (to get notification of connection errors)
-db.on('error', console.error.bind(console, 'You are NOT connected to MongoDB:'));
-
-// Bind connection to open event (to get notification of connection success)
-db.once('open', () => {
-  console.log('You are now connected to MongoDB');
-});
-
-// Export the database connection
-module.exports = db;
+module.exports = mongoURI;
