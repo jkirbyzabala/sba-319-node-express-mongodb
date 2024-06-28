@@ -1,3 +1,13 @@
+Purpose:
+
+This app is to allow me to Create, Read, Updaate and Delete subjective ratings of the users in my MongoDB sample-mflix data. This is completely based on personal sentiment. Other clients are welcome to make CRUD updates based on their interpretation of the character.
+
+Ex.
+
+- user: Arya Stark
+- rating: 100/10
+- reason: killed the Night King with her non-dominant hand
+
 # Project Requirements
 
 - Use at least three different data collections within the database (such as users, posts, or comments).
