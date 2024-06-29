@@ -16,13 +16,13 @@ mongoose.connect(mongoURI)
       email: "lena_headey@gameofthron.es",
       password: "$2b$12$FExjgr7CLhNCa.oUsB9seub8mqcHzkJCFZ8heMc8CeIKOZfeTKP8m",
       rating: "-100/10",
-      reason: "Inappropriate relations with one brother, very ablist to the other brother"
+      reason: "Inappropriate relations with one brother, very ableist to the other brother"
     },
     {
       name: "Arya Stark",
       email: "maisie_williams@gameofthron.es",
       password: "$2b$12$19h3KjeTg3/sPNFHztdb6eGWKrCxIwlVXVSh9POSi5PS9kSlguZEq",
-      rating: "-11/10",
+      rating: "11/10",
       reason: "Many faces, and killed the night-king"
     },
     {
@@ -30,7 +30,7 @@ mongoose.connect(mongoURI)
       email: "jason_momoa@gameofthron.es",
       password: "$2b$12$7tgpVkBxUqQiYFkHjZyoMuEzFU5BSI.FYkOXHu4zCRlRsa15sHQo6",
       rating: "4/10",
-      reason: "cool hair but didn't last very long"
+      reason: "Cool hair but didn't last very long"
     },
     {
       name: "Sansa Stark",
@@ -43,7 +43,7 @@ mongoose.connect(mongoURI)
       name: "Petyr Baelish",
       email: "aidan_gillen@gameofthron.es",
       password: "$2b$12$qM.YvmiekyYYY7p7phpK3OicbRCDkN7ESwYAnG/o9YnfHC0Mhkmbi",
-      rating: "7.5/10",
+      rating: "-10/10",
       reason: "Master manipulator and habitual liar too."
     }
   ];

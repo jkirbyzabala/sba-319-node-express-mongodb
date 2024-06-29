@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  ratings: {
+  rating: {
     type: String, // Keep it a string b/c your ratings format 
     default: 'N/A' // Default value if not provided
   },
