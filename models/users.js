@@ -1,3 +1,5 @@
+//where you put the schema where data is organized
+
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
