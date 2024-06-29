@@ -1,6 +1,6 @@
 // this is where I am going to handle all my CRUD 
 
-const User = require('../models/user');
+const User = require('../models/users');
 
 // CREATE New User
 exports.createUser = async (req, res) => {
